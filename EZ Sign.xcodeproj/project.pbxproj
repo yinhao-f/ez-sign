@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E0DA8F41CB6E09900421800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA8F31CB6E09900421800 /* AppDelegate.swift */; };
+		1E0DA8F61CB6E09900421800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA8F51CB6E09900421800 /* ViewController.swift */; };
+		1E0DA8F91CB6E09900421800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0DA8F71CB6E09900421800 /* Main.storyboard */; };
+		1E0DA8FB1CB6E09900421800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E0DA8FA1CB6E09900421800 /* Assets.xcassets */; };
+		1E0DA8FE1CB6E09900421800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0DA8FC1CB6E09900421800 /* LaunchScreen.storyboard */; };
+		1E0DA9091CB6E09900421800 /* EZ_SignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA9081CB6E09900421800 /* EZ_SignTests.swift */; };
+		1E0DA9141CB6E09900421800 /* EZ_SignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA9131CB6E09900421800 /* EZ_SignUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E0DA9051CB6E09900421800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E0DA8E81CB6E09900421800 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E0DA8EF1CB6E09900421800;
+			remoteInfo = "EZ Sign";
+		};
+		1E0DA9101CB6E09900421800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E0DA8E81CB6E09900421800 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E0DA8EF1CB6E09900421800;
+			remoteInfo = "EZ Sign";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E0DA8F01CB6E09900421800 /* EZ Sign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EZ Sign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0DA8F31CB6E09900421800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E0DA8F51CB6E09900421800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E0DA8F81CB6E09900421800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E0DA8FA1CB6E09900421800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E0DA8FD1CB6E09900421800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E0DA8FF1CB6E09900421800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E0DA9041CB6E09900421800 /* EZ SignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EZ SignTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0DA9081CB6E09900421800 /* EZ_SignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZ_SignTests.swift; sourceTree = "<group>"; };
+		1E0DA90A1CB6E09900421800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E0DA90F1CB6E09900421800 /* EZ SignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EZ SignUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0DA9131CB6E09900421800 /* EZ_SignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZ_SignUITests.swift; sourceTree = "<group>"; };
+		1E0DA9151CB6E09900421800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E0DA8ED1CB6E09900421800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0DA9011CB6E09900421800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0DA90C1CB6E09900421800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E0DA8E71CB6E09900421800 = {
+			isa = PBXGroup;
+			children = (
+				1E0DA8F21CB6E09900421800 /* EZ Sign */,
+				1E0DA9071CB6E09900421800 /* EZ SignTests */,
+				1E0DA9121CB6E09900421800 /* EZ SignUITests */,
+				1E0DA8F11CB6E09900421800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E0DA8F11CB6E09900421800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E0DA8F01CB6E09900421800 /* EZ Sign.app */,
+				1E0DA9041CB6E09900421800 /* EZ SignTests.xctest */,
+				1E0DA90F1CB6E09900421800 /* EZ SignUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E0DA8F21CB6E09900421800 /* EZ Sign */ = {
+			isa = PBXGroup;
+			children = (
+				1E0DA8F31CB6E09900421800 /* AppDelegate.swift */,
+				1E0DA8F51CB6E09900421800 /* ViewController.swift */,
+				1E0DA8F71CB6E09900421800 /* Main.storyboard */,
+				1E0DA8FA1CB6E09900421800 /* Assets.xcassets */,
+				1E0DA8FC1CB6E09900421800 /* LaunchScreen.storyboard */,
+				1E0DA8FF1CB6E09900421800 /* Info.plist */,
+			);
+			path = "EZ Sign";
+			sourceTree = "<group>";
+		};
+		1E0DA9071CB6E09900421800 /* EZ SignTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E0DA9081CB6E09900421800 /* EZ_SignTests.swift */,
+				1E0DA90A1CB6E09900421800 /* Info.plist */,
+			);
+			path = "EZ SignTests";
+			sourceTree = "<group>";
+		};
+		1E0DA9121CB6E09900421800 /* EZ SignUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E0DA9131CB6E09900421800 /* EZ_SignUITests.swift */,
+				1E0DA9151CB6E09900421800 /* Info.plist */,
+			);
+			path = "EZ SignUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E0DA8EF1CB6E09900421800 /* EZ Sign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E0DA9181CB6E09900421800 /* Build configuration list for PBXNativeTarget "EZ Sign" */;
+			buildPhases = (
+				1E0DA8EC1CB6E09900421800 /* Sources */,
+				1E0DA8ED1CB6E09900421800 /* Frameworks */,
+				1E0DA8EE1CB6E09900421800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EZ Sign";
+			productName = "EZ Sign";
+			productReference = 1E0DA8F01CB6E09900421800 /* EZ Sign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E0DA9031CB6E09900421800 /* EZ SignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E0DA91B1CB6E09900421800 /* Build configuration list for PBXNativeTarget "EZ SignTests" */;
+			buildPhases = (
+				1E0DA9001CB6E09900421800 /* Sources */,
+				1E0DA9011CB6E09900421800 /* Frameworks */,
+				1E0DA9021CB6E09900421800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E0DA9061CB6E09900421800 /* PBXTargetDependency */,
+			);
+			name = "EZ SignTests";
+			productName = "EZ SignTests";
+			productReference = 1E0DA9041CB6E09900421800 /* EZ SignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E0DA90E1CB6E09900421800 /* EZ SignUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E0DA91E1CB6E09900421800 /* Build configuration list for PBXNativeTarget "EZ SignUITests" */;
+			buildPhases = (
+				1E0DA90B1CB6E09900421800 /* Sources */,
+				1E0DA90C1CB6E09900421800 /* Frameworks */,
+				1E0DA90D1CB6E09900421800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E0DA9111CB6E09900421800 /* PBXTargetDependency */,
+			);
+			name = "EZ SignUITests";
+			productName = "EZ SignUITests";
+			productReference = 1E0DA90F1CB6E09900421800 /* EZ SignUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E0DA8E81CB6E09900421800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = SSFS;
+				TargetAttributes = {
+					1E0DA8EF1CB6E09900421800 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					1E0DA9031CB6E09900421800 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 1E0DA8EF1CB6E09900421800;
+					};
+					1E0DA90E1CB6E09900421800 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 1E0DA8EF1CB6E09900421800;
+					};
+				};
+			};
+			buildConfigurationList = 1E0DA8EB1CB6E09900421800 /* Build configuration list for PBXProject "EZ Sign" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E0DA8E71CB6E09900421800;
+			productRefGroup = 1E0DA8F11CB6E09900421800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E0DA8EF1CB6E09900421800 /* EZ Sign */,
+				1E0DA9031CB6E09900421800 /* EZ SignTests */,
+				1E0DA90E1CB6E09900421800 /* EZ SignUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E0DA8EE1CB6E09900421800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0DA8FE1CB6E09900421800 /* LaunchScreen.storyboard in Resources */,
+				1E0DA8FB1CB6E09900421800 /* Assets.xcassets in Resources */,
+				1E0DA8F91CB6E09900421800 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0DA9021CB6E09900421800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0DA90D1CB6E09900421800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E0DA8EC1CB6E09900421800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0DA8F61CB6E09900421800 /* ViewController.swift in Sources */,
+				1E0DA8F41CB6E09900421800 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0DA9001CB6E09900421800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0DA9091CB6E09900421800 /* EZ_SignTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E0DA90B1CB6E09900421800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0DA9141CB6E09900421800 /* EZ_SignUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E0DA9061CB6E09900421800 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E0DA8EF1CB6E09900421800 /* EZ Sign */;
+			targetProxy = 1E0DA9051CB6E09900421800 /* PBXContainerItemProxy */;
+		};
+		1E0DA9111CB6E09900421800 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E0DA8EF1CB6E09900421800 /* EZ Sign */;
+			targetProxy = 1E0DA9101CB6E09900421800 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E0DA8F71CB6E09900421800 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E0DA8F81CB6E09900421800 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E0DA8FC1CB6E09900421800 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E0DA8FD1CB6E09900421800 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E0DA9161CB6E09900421800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E0DA9171CB6E09900421800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E0DA9191CB6E09900421800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "EZ Sign/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.EZ-Sign";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E0DA91A1CB6E09900421800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "EZ Sign/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.EZ-Sign";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E0DA91C1CB6E09900421800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EZ SignTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.EZ-SignTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EZ Sign.app/EZ Sign";
+			};
+			name = Debug;
+		};
+		1E0DA91D1CB6E09900421800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EZ SignTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.EZ-SignTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EZ Sign.app/EZ Sign";
+			};
+			name = Release;
+		};
+		1E0DA91F1CB6E09900421800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EZ SignUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.EZ-SignUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "EZ Sign";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1E0DA9201CB6E09900421800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EZ SignUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.EZ-SignUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "EZ Sign";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E0DA8EB1CB6E09900421800 /* Build configuration list for PBXProject "EZ Sign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0DA9161CB6E09900421800 /* Debug */,
+				1E0DA9171CB6E09900421800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E0DA9181CB6E09900421800 /* Build configuration list for PBXNativeTarget "EZ Sign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0DA9191CB6E09900421800 /* Debug */,
+				1E0DA91A1CB6E09900421800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E0DA91B1CB6E09900421800 /* Build configuration list for PBXNativeTarget "EZ SignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0DA91C1CB6E09900421800 /* Debug */,
+				1E0DA91D1CB6E09900421800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E0DA91E1CB6E09900421800 /* Build configuration list for PBXNativeTarget "EZ SignUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0DA91F1CB6E09900421800 /* Debug */,
+				1E0DA9201CB6E09900421800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E0DA8E81CB6E09900421800 /* Project object */;
+}
