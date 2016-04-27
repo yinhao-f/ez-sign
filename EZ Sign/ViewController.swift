@@ -5,6 +5,7 @@
 //  Created by Yinhao Feng on 4/7/16.
 //  Copyright © 2016 SSFS. All rights reserved.
 //
+//  This is a test comment.
 
 import UIKit
 
