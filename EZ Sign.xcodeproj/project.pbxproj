@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1E0DA8F41CB6E09900421800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA8F31CB6E09900421800 /* AppDelegate.swift */; };
-		1E0DA8F61CB6E09900421800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA8F51CB6E09900421800 /* ViewController.swift */; };
 		1E0DA8F91CB6E09900421800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0DA8F71CB6E09900421800 /* Main.storyboard */; };
 		1E0DA8FB1CB6E09900421800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E0DA8FA1CB6E09900421800 /* Assets.xcassets */; };
 		1E0DA8FE1CB6E09900421800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0DA8FC1CB6E09900421800 /* LaunchScreen.storyboard */; };
 		1E0DA9091CB6E09900421800 /* EZ_SignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA9081CB6E09900421800 /* EZ_SignTests.swift */; };
 		1E0DA9141CB6E09900421800 /* EZ_SignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA9131CB6E09900421800 /* EZ_SignUITests.swift */; };
+		BF01883D1CD28ED90002FA7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01883C1CD28ED90002FA7F /* HomeViewController.swift */; };
+		BF01884D1CD28FF60002FA7F /* BAAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0188401CD28FF50002FA7F /* BAAClient.m */; };
+		BF01884E1CD28FF60002FA7F /* BAAFile.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0188421CD28FF50002FA7F /* BAAFile.m */; };
+		BF01884F1CD28FF60002FA7F /* BAAGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0188441CD28FF50002FA7F /* BAAGlobals.m */; };
+		BF0188501CD28FF60002FA7F /* BAAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0188461CD28FF50002FA7F /* BAAMutableURLRequest.m */; };
+		BF0188511CD28FF60002FA7F /* BAAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0188481CD28FF50002FA7F /* BAAObject.m */; };
+		BF0188521CD28FF60002FA7F /* BaasBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BF01884A1CD28FF60002FA7F /* BaasBox.m */; };
+		BF0188531CD28FF60002FA7F /* BAAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BF01884C1CD28FF60002FA7F /* BAAUser.m */; };
+		BF0188561CD2957E0002FA7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0188551CD2957E0002FA7F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,6 @@
 /* Begin PBXFileReference section */
 		1E0DA8F01CB6E09900421800 /* EZ Sign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EZ Sign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0DA8F31CB6E09900421800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E0DA8F51CB6E09900421800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E0DA8F81CB6E09900421800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E0DA8FA1CB6E09900421800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E0DA8FD1CB6E09900421800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,23 @@
 		1E0DA90F1CB6E09900421800 /* EZ SignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EZ SignUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0DA9131CB6E09900421800 /* EZ_SignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZ_SignUITests.swift; sourceTree = "<group>"; };
 		1E0DA9151CB6E09900421800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF01883C1CD28ED90002FA7F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF01883E1CD28FF50002FA7F /* EZ Sign-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EZ Sign-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF01883F1CD28FF50002FA7F /* BAAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAClient.h; sourceTree = "<group>"; };
+		BF0188401CD28FF50002FA7F /* BAAClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAClient.m; sourceTree = "<group>"; };
+		BF0188411CD28FF50002FA7F /* BAAFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAFile.h; sourceTree = "<group>"; };
+		BF0188421CD28FF50002FA7F /* BAAFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAFile.m; sourceTree = "<group>"; };
+		BF0188431CD28FF50002FA7F /* BAAGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAGlobals.h; sourceTree = "<group>"; };
+		BF0188441CD28FF50002FA7F /* BAAGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAGlobals.m; sourceTree = "<group>"; };
+		BF0188451CD28FF50002FA7F /* BAAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAMutableURLRequest.h; sourceTree = "<group>"; };
+		BF0188461CD28FF50002FA7F /* BAAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAMutableURLRequest.m; sourceTree = "<group>"; };
+		BF0188471CD28FF50002FA7F /* BAAObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAObject.h; sourceTree = "<group>"; };
+		BF0188481CD28FF50002FA7F /* BAAObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAObject.m; sourceTree = "<group>"; };
+		BF0188491CD28FF60002FA7F /* BaasBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaasBox.h; sourceTree = "<group>"; };
+		BF01884A1CD28FF60002FA7F /* BaasBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaasBox.m; sourceTree = "<group>"; };
+		BF01884B1CD28FF60002FA7F /* BAAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAUser.h; sourceTree = "<group>"; };
+		BF01884C1CD28FF60002FA7F /* BAAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAUser.m; sourceTree = "<group>"; };
+		BF0188551CD2957E0002FA7F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +105,7 @@
 				1E0DA9071CB6E09900421800 /* EZ SignTests */,
 				1E0DA9121CB6E09900421800 /* EZ SignUITests */,
 				1E0DA8F11CB6E09900421800 /* Products */,
+				BF0188541CD290030002FA7F /* BaasBox Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				1E0DA8F31CB6E09900421800 /* AppDelegate.swift */,
-				1E0DA8F51CB6E09900421800 /* ViewController.swift */,
 				1E0DA8F71CB6E09900421800 /* Main.storyboard */,
+				BF0188551CD2957E0002FA7F /* LoginViewController.swift */,
+				BF01883C1CD28ED90002FA7F /* HomeViewController.swift */,
 				1E0DA8FA1CB6E09900421800 /* Assets.xcassets */,
 				1E0DA8FC1CB6E09900421800 /* LaunchScreen.storyboard */,
 				1E0DA8FF1CB6E09900421800 /* Info.plist */,
@@ -123,6 +149,28 @@
 				1E0DA9151CB6E09900421800 /* Info.plist */,
 			);
 			path = "EZ SignUITests";
+			sourceTree = "<group>";
+		};
+		BF0188541CD290030002FA7F /* BaasBox Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF01883F1CD28FF50002FA7F /* BAAClient.h */,
+				BF0188401CD28FF50002FA7F /* BAAClient.m */,
+				BF0188411CD28FF50002FA7F /* BAAFile.h */,
+				BF0188421CD28FF50002FA7F /* BAAFile.m */,
+				BF0188431CD28FF50002FA7F /* BAAGlobals.h */,
+				BF0188441CD28FF50002FA7F /* BAAGlobals.m */,
+				BF0188451CD28FF50002FA7F /* BAAMutableURLRequest.h */,
+				BF0188461CD28FF50002FA7F /* BAAMutableURLRequest.m */,
+				BF0188471CD28FF50002FA7F /* BAAObject.h */,
+				BF0188481CD28FF50002FA7F /* BAAObject.m */,
+				BF0188491CD28FF60002FA7F /* BaasBox.h */,
+				BF01884A1CD28FF60002FA7F /* BaasBox.m */,
+				BF01884B1CD28FF60002FA7F /* BAAUser.h */,
+				BF01884C1CD28FF60002FA7F /* BAAUser.m */,
+				BF01883E1CD28FF50002FA7F /* EZ Sign-Bridging-Header.h */,
+			);
+			name = "BaasBox Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +304,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E0DA8F61CB6E09900421800 /* ViewController.swift in Sources */,
+				BF01884E1CD28FF60002FA7F /* BAAFile.m in Sources */,
+				BF0188501CD28FF60002FA7F /* BAAMutableURLRequest.m in Sources */,
+				BF01884F1CD28FF60002FA7F /* BAAGlobals.m in Sources */,
+				BF01884D1CD28FF60002FA7F /* BAAClient.m in Sources */,
+				BF0188521CD28FF60002FA7F /* BaasBox.m in Sources */,
+				BF0188531CD28FF60002FA7F /* BAAUser.m in Sources */,
 				1E0DA8F41CB6E09900421800 /* AppDelegate.swift in Sources */,
+				BF01883D1CD28ED90002FA7F /* HomeViewController.swift in Sources */,
+				BF0188561CD2957E0002FA7F /* LoginViewController.swift in Sources */,
+				BF0188511CD28FF60002FA7F /* BAAObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +455,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "EZ Sign/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.EZ-Sign";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EZ Sign-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +469,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "EZ Sign/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ssfs.EZ-Sign";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EZ Sign-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +545,7 @@
 				1E0DA91A1CB6E09900421800 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E0DA91B1CB6E09900421800 /* Build configuration list for PBXNativeTarget "EZ SignTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +554,7 @@
 				1E0DA91D1CB6E09900421800 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E0DA91E1CB6E09900421800 /* Build configuration list for PBXNativeTarget "EZ SignUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +563,7 @@
 				1E0DA9201CB6E09900421800 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
