@@ -12,6 +12,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var statusLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,8 +26,9 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
         let client = BAAClient.sharedClient()
-        if !client.isAuthenticated() {
+        if client.isAuthenticated() {
             statusLabel.text = "Welcome!"
         } else {
             statusLabel.text = "Not Logged in."

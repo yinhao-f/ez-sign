@@ -10,11 +10,44 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    let client = BAAClient.sharedClient()
+    
+    required init?(coder aDecoder: (NSCoder!)) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var errorLabel: UILabel!
+    
+    @IBAction func loginTapped(sender: UIButton) {
+        loginButton.enabled = false
+        spinner.startAnimating()
+        
+        client.authenticateUser(usernameField.text, password: passwordField.text, completion: { (success: Bool, error: NSError!) -> () in
+            self.spinner.stopAnimating()
+            self.loginButton.enabled = true
+            
+            if success {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            } else {
+                self.errorLabel.text = error.localizedDescription
+            }
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        spinner.hidesWhenStopped = true
+        errorLabel.text = ""
     }
 
     override func didReceiveMemoryWarning() {
