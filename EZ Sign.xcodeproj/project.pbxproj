@@ -22,6 +22,8 @@
 		BF0188521CD28FF60002FA7F /* BaasBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BF01884A1CD28FF60002FA7F /* BaasBox.m */; };
 		BF0188531CD28FF60002FA7F /* BAAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BF01884C1CD28FF60002FA7F /* BAAUser.m */; };
 		BF0188561CD2957E0002FA7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0188551CD2957E0002FA7F /* LoginViewController.swift */; };
+		BF9F22971CDA3FBD001888A4 /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22961CDA3FBD001888A4 /* SignOutViewController.swift */; };
+		BF9F22991CDA40FC001888A4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22981CDA40FC001888A4 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		BF01884B1CD28FF60002FA7F /* BAAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAUser.h; sourceTree = "<group>"; };
 		BF01884C1CD28FF60002FA7F /* BAAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAUser.m; sourceTree = "<group>"; };
 		BF0188551CD2957E0002FA7F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BF9F22961CDA3FBD001888A4 /* SignOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
+		BF9F22981CDA40FC001888A4 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 			children = (
 				1E0DA8F31CB6E09900421800 /* AppDelegate.swift */,
 				1E0DA8F71CB6E09900421800 /* Main.storyboard */,
+				BF9F22981CDA40FC001888A4 /* SignInViewController.swift */,
+				BF9F22961CDA3FBD001888A4 /* SignOutViewController.swift */,
 				BF0188551CD2957E0002FA7F /* LoginViewController.swift */,
 				BF01883C1CD28ED90002FA7F /* HomeViewController.swift */,
 				1E0DA8FA1CB6E09900421800 /* Assets.xcassets */,
@@ -312,8 +318,10 @@
 				BF0188531CD28FF60002FA7F /* BAAUser.m in Sources */,
 				1E0DA8F41CB6E09900421800 /* AppDelegate.swift in Sources */,
 				BF01883D1CD28ED90002FA7F /* HomeViewController.swift in Sources */,
+				BF9F22991CDA40FC001888A4 /* SignInViewController.swift in Sources */,
 				BF0188561CD2957E0002FA7F /* LoginViewController.swift in Sources */,
 				BF0188511CD28FF60002FA7F /* BAAObject.m in Sources */,
+				BF9F22971CDA3FBD001888A4 /* SignOutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,10 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    // Import BaasBox.
     let client = BAAClient.sharedClient()
     
+    // Clear errors.
     required init?(coder aDecoder: (NSCoder!)) {
         super.init(coder: aDecoder)
     }
@@ -21,16 +23,19 @@ class LoginViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
+    // Connect the elements from the view.
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var errorLabel: UILabel!
     
+    // Let the user logi in when the button is tapped.
     @IBAction func loginTapped(sender: UIButton) {
         loginButton.enabled = false
         spinner.startAnimating()
         
+        // Authenticate the user on BaasBox.
         client.authenticateUser(usernameField.text, password: passwordField.text, completion: { (success: Bool, error: NSError!) -> () in
             self.spinner.stopAnimating()
             self.loginButton.enabled = true
@@ -46,6 +51,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Hide the spinner and error label when inactive. 
         spinner.hidesWhenStopped = true
         errorLabel.text = ""
     }

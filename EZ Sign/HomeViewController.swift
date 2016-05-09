@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Check if the user is logged in.
         let client = BAAClient.sharedClient()
         if client.isAuthenticated() {
             statusLabel.text = "Welcome!"
@@ -34,6 +35,16 @@ class HomeViewController: UIViewController {
             statusLabel.text = "Not Logged in."
             self.navigationController?.performSegueWithIdentifier("showLogin", sender: nil)
         }
+    }
+    
+    // Direct the user to the sign out view once the button is tapped.
+    @IBAction func signOutTapped(sender: UIButton) {
+        navigationController?.performSegueWithIdentifier("showSignOut", sender: nil)
+    }
+    
+    //Direct the user to the sign in view once the button is tapped.
+    @IBAction func signInTapped(sender: UIButton) {
+        navigationController?.performSegueWithIdentifier("showSignIn", sender: nil)
     }
 
     /*
