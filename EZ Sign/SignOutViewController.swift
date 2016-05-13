@@ -9,27 +9,55 @@
 
 import UIKit
 
-class SignOutViewController: UIViewController, UIPickerViewDataSource {
+class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var phoneNumberField: UITextField!
     @IBOutlet weak var destinationField: UITextField!
     @IBOutlet weak var driverField: UITextField!
-    
-    @IBAction func continueButton(sender: UIButton) {
-        // TODO: Collect information to BaasBox and display an alert when the user taps it.
-    }
+    @IBOutlet weak var returnTimePicker: UIDatePicker!
     
     // Set the number of columns in destination picker.
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    var numberOfRows:Int = 3
+    var destinationChoices = Destination()
     
+    var locations = [String]()
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        Destination.getObjectWithId("e54270be-4ba0-4718-bc96-5e07b2e13ccc") { (object: AnyObject!, error: NSError!) -> () in
+            if error == nil {
+                self.destinationChoices = object as! Destination
+                self.locations = self.destinationChoices.destinations
+            }
+        }
+    }
+        
     // Set the number of rows in destination picker.
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return numberOfRows
+        return locations.count
+    }
+    
+    // Content for each row in the destination picker.
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return locations[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // Check if the user chose the "other" option. Display the text field if chosen.
+        if locations[row] == "Other" {
+            destinationField.hidden = false
+        } else {
+            destinationField.hidden = true
+        }
+    }
+    
+    @IBAction func continueButton(sender: UIButton) {
+        // TODO: Upload information to BaasBox and display an alert when the user taps it.
     }
     
     override func viewDidLoad() {
