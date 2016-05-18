@@ -22,19 +22,20 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         return 1
     }
     
-    var destinationChoices = Destination()
-    
+    var destinationChoices: [Destination] = []
     var locations = [String]()
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        Destination.getObjectWithId("e54270be-4ba0-4718-bc96-5e07b2e13ccc") { (object: AnyObject!, error: NSError!) -> () in
+        Destination.getObjectsWithCompletion( { (destination: [AnyObject]!, error: NSError!) -> () in
             if error == nil {
-                self.destinationChoices = object as! Destination
-                self.locations = self.destinationChoices.destinations
+                self.destinationChoices = destination as! [Destination]
+                self.locations = self.destinationChoices[0].destinations
+            } else {
+                print("Error loading destinations")
             }
-        }
+        })
     }
         
     // Set the number of rows in destination picker.

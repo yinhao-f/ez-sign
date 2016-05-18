@@ -11,8 +11,12 @@ import UIKit
 class Destination: BAAObject {
     var destinations: [String]
     
-    override init(dictionary: [NSObject : AnyObject]!) {
+    override init(dictionary: [NSObject: AnyObject]!) {
         self.destinations = dictionary["destinations"]! as! [String]
         super.init(dictionary: dictionary)
+    }
+    
+    override func collectionName() -> String! {
+        return "document/yf_ez-sign-destination"
     }
 }
