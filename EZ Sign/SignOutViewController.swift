@@ -16,24 +16,32 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBOutlet weak var destinationField: UITextField!
     @IBOutlet weak var driverField: UITextField!
     @IBOutlet weak var returnTimePicker: UIDatePicker!
+    @IBOutlet weak var destinationPicker: UIPickerView!
+    
+    var destination: String = ""
+    var newRecord = Record()
     
     // Set the number of columns in destination picker.
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    var destinationChoices: [Destination] = []
-    var locations = [String]()
+    // Retrieve data from BaasBox for destination choices.
+    var destinationChoices = Destination()
+    var locations: [String] = []
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        Destination.getObjectsWithCompletion( { (destination: [AnyObject]!, error: NSError!) -> () in
+        Destination.getObjectWithId("e54270be-4ba0-4718-bc96-5e07b2e13ccc", completion: { (location: AnyObject!, error: NSError!) -> () in
             if error == nil {
-                self.destinationChoices = destination as! [Destination]
-                self.locations = self.destinationChoices[0].destinations
+                self.destinationChoices = location as! Destination
+                self.locations = self.destinationChoices.destinations
+                
+                // Refresh the picker.
+                self.destinationPicker.reloadAllComponents()
             } else {
-                print("Error loading destinations")
+                print("Error loading destinations.")
             }
         })
     }
@@ -49,21 +57,40 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // Check if the user chose the "other" option. Display the text field if chosen.
+        // Check if the user chooses the "other" option. Display the text field if chosen.
         if locations[row] == "Other" {
             destinationField.hidden = false
+            destination = destinationField.text!
         } else {
             destinationField.hidden = true
+            destination = locations[row]
         }
     }
     
     @IBAction func continueButton(sender: UIButton) {
-        // TODO: Upload information to BaasBox and display an alert when the user taps it.
+        let formatter = NSDateFormatter()
+        formatter.timeStyle = .LongStyle
+        
+        newRecord.name = nameField.text!
+        newRecord.phoneNumber = phoneNumberField.text!
+        newRecord.destinationChoice = destination
+        newRecord.driver = driverField.text!
+        newRecord.returnTime = formatter.stringFromDate(returnTimePicker.date)
+        
+        newRecord.saveObjectWithCompletion({(object: AnyObject!, error: NSError!) -> () in
+            if error == nil {
+                print("Success!")
+            } else {
+                print("Error!")
+            }
+        })
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        destinationPicker.dataSource = self
+        destinationPicker.delegate = self
         // Hide the custom destination box when "other" is not chosen.
         destinationField.hidden = true
     }

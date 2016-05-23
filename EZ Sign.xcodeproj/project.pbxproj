@@ -13,6 +13,7 @@
 		1E0DA8FE1CB6E09900421800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0DA8FC1CB6E09900421800 /* LaunchScreen.storyboard */; };
 		1E0DA9091CB6E09900421800 /* EZ_SignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA9081CB6E09900421800 /* EZ_SignTests.swift */; };
 		1E0DA9141CB6E09900421800 /* EZ_SignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0DA9131CB6E09900421800 /* EZ_SignUITests.swift */; };
+		1EF4313C1CF33CE3002A39BB /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4313B1CF33CE3002A39BB /* Record.swift */; };
 		BF01883D1CD28ED90002FA7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01883C1CD28ED90002FA7F /* HomeViewController.swift */; };
 		BF01884D1CD28FF60002FA7F /* BAAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0188401CD28FF50002FA7F /* BAAClient.m */; };
 		BF01884E1CD28FF60002FA7F /* BAAFile.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0188421CD28FF50002FA7F /* BAAFile.m */; };
@@ -57,6 +58,7 @@
 		1E0DA90F1CB6E09900421800 /* EZ SignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EZ SignUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E0DA9131CB6E09900421800 /* EZ_SignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZ_SignUITests.swift; sourceTree = "<group>"; };
 		1E0DA9151CB6E09900421800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EF4313B1CF33CE3002A39BB /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		BF01883C1CD28ED90002FA7F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BF01883E1CD28FF50002FA7F /* EZ Sign-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EZ Sign-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF01883F1CD28FF50002FA7F /* BAAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAClient.h; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				1E0DA8F31CB6E09900421800 /* AppDelegate.swift */,
 				1E0DA8F71CB6E09900421800 /* Main.storyboard */,
 				BF79AFA91CE4CCA000BC8F66 /* Destination.swift */,
+				1EF4313B1CF33CE3002A39BB /* Record.swift */,
 				BF9F22981CDA40FC001888A4 /* SignInViewController.swift */,
 				BF9F22961CDA3FBD001888A4 /* SignOutViewController.swift */,
 				BF0188551CD2957E0002FA7F /* LoginViewController.swift */,
@@ -317,6 +320,7 @@
 				BF0188501CD28FF60002FA7F /* BAAMutableURLRequest.m in Sources */,
 				BF01884F1CD28FF60002FA7F /* BAAGlobals.m in Sources */,
 				BF79AFAA1CE4CCA000BC8F66 /* Destination.swift in Sources */,
+				1EF4313C1CF33CE3002A39BB /* Record.swift in Sources */,
 				BF01884D1CD28FF60002FA7F /* BAAClient.m in Sources */,
 				BF0188521CD28FF60002FA7F /* BaasBox.m in Sources */,
 				BF0188531CD28FF60002FA7F /* BAAUser.m in Sources */,
