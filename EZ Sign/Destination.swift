@@ -10,6 +10,8 @@
 import UIKit
 
 class Destination: BAAObject {
+    // This is a class for retrieving destination data from Baasbox.
+    
     var destinations: [String]
     
     override init(dictionary: [NSObject : AnyObject]!) {

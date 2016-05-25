@@ -10,6 +10,8 @@
 import UIKit
 
 class Record: BAAObject {
+    // This is a class for saving records to BaasBox. 
+    
     var name = ""
     var phoneNumber = ""
     var destinationChoice = ""

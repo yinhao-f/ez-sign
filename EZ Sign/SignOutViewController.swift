@@ -73,13 +73,16 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         }
     }
     
+    // Assign the subclass for a new record.
     var newRecord = Record()
     
     @IBAction func continueButton(sender: UIButton) {
+        // Set the format for the sign out and return dates.
         let formatter = NSDateFormatter()
         formatter.dateStyle = .MediumStyle
         formatter.timeStyle = .ShortStyle
         
+        // Assign the corresponding values to the subclass.
         newRecord.name = nameField.text!
         newRecord.phoneNumber = phoneNumberField.text!
         
@@ -94,9 +97,15 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         newRecord.signOutTime = formatter.stringFromDate(currentTime)
         newRecord.returnTime = formatter.stringFromDate(returnTimePicker.date)
         
+        // Save the record to BaasBox.
         newRecord.saveObjectWithCompletion({(object: AnyObject!, error: NSError!) -> () in
             if error == nil {
-                print("Success!")
+                // Implement an alert that returns the user to home view after the record is uploaded successfully.
+                let successAlert = UIAlertController(title: "EZ Sign", message: "Success! Your information has been recorded.", preferredStyle: UIAlertControllerStyle.Alert)
+                successAlert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) in
+                    self.navigationController?.popViewControllerAnimated(true)
+                }))
+                self.presentViewController(successAlert, animated: true, completion: nil)
             } else {
                 print(error)
             }
@@ -106,8 +115,10 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Connect the destination picker to self.
         destinationPicker.dataSource = self
         destinationPicker.delegate = self
+        
         // Hide the custom destination box when "other" is not chosen.
         destinationField.hidden = true
     }
