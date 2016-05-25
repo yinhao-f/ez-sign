@@ -10,17 +10,15 @@
 import UIKit
 
 class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
+    // Connecting outlets
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var phoneNumberField: UITextField!
     @IBOutlet weak var destinationField: UITextField!
     @IBOutlet weak var driverField: UITextField!
     @IBOutlet weak var returnTimePicker: UIDatePicker!
     @IBOutlet weak var destinationPicker: UIPickerView!
-    
-    var destination: String = ""
-    var newRecord = Record()
-    
+
     // Set the number of columns in destination picker.
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
@@ -30,9 +28,15 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     var destinationChoices = Destination()
     var locations: [String] = []
     
+    // Collect current time from the return date picker before the user chooses it.
+    var currentTime = NSDate()
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        self.currentTime = returnTimePicker.date
+        
+        // Retrieve destination data.
         Destination.getObjectWithId("e54270be-4ba0-4718-bc96-5e07b2e13ccc", completion: { (location: AnyObject!, error: NSError!) -> () in
             if error == nil {
                 self.destinationChoices = location as! Destination
@@ -56,32 +60,45 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         return locations[row]
     }
     
+    // Check if the user chooses the "other" option. Display the text field if chosen.
+    var otherChosen = false
+    
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // Check if the user chooses the "other" option. Display the text field if chosen.
         if locations[row] == "Other" {
             destinationField.hidden = false
-            destination = destinationField.text!
+            otherChosen = true
         } else {
             destinationField.hidden = true
-            destination = locations[row]
+            otherChosen = false
         }
     }
     
+    var newRecord = Record()
+    
     @IBAction func continueButton(sender: UIButton) {
         let formatter = NSDateFormatter()
-        formatter.timeStyle = .LongStyle
+        formatter.dateStyle = .MediumStyle
+        formatter.timeStyle = .ShortStyle
         
         newRecord.name = nameField.text!
         newRecord.phoneNumber = phoneNumberField.text!
-        newRecord.destinationChoice = destination
+        
+        // Decide the actual destination.
+        if otherChosen {
+            newRecord.destinationChoice = destinationField.text!
+        } else {
+            newRecord.destinationChoice = locations[destinationPicker.selectedRowInComponent(0)]
+        }
+        
         newRecord.driver = driverField.text!
+        newRecord.signOutTime = formatter.stringFromDate(currentTime)
         newRecord.returnTime = formatter.stringFromDate(returnTimePicker.date)
         
         newRecord.saveObjectWithCompletion({(object: AnyObject!, error: NSError!) -> () in
             if error == nil {
                 print("Success!")
             } else {
-                print("Error!")
+                print(error)
             }
         })
     }

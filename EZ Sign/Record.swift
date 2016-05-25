@@ -14,6 +14,7 @@ class Record: BAAObject {
     var phoneNumber = ""
     var destinationChoice = ""
     var driver = ""
+    var signOutTime = ""
     var returnTime = ""
     
     override init(dictionary: [NSObject: AnyObject]!) {
@@ -21,6 +22,7 @@ class Record: BAAObject {
         self.phoneNumber = dictionary["phoneNumber"]! as! String
         self.destinationChoice = dictionary["destinationChoice"]! as! String
         self.driver = dictionary["driver"]! as! String
+        self.signOutTime = dictionary["signOutTime"]! as! String
         self.returnTime = dictionary["returnTime"]! as! String
         super.init(dictionary: dictionary)
     }
