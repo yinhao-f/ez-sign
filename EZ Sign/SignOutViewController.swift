@@ -98,9 +98,28 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         newRecord.returnTime = formatter.stringFromDate(returnTimePicker.date)
         newRecord.signedIn = false
         
+        // Check if all fields are completed.
+        var completedFields = true        
+        if newRecord.name == "" {
+            completedFields = false
+        }
+        if newRecord.phoneNumber == "" {
+            completedFields = false
+        }
+        
+        if newRecord.driver == "" {
+            completedFields = false
+        }
+        
+        if newRecord.destinationChoice == "" {
+            completedFields = false
+        }
+        
+        
+        
         // Save the record to BaasBox.
         newRecord.saveObjectWithCompletion({(object: AnyObject!, error: NSError!) -> () in
-            if error == nil {
+            if (error == nil) && (completedFields) {
                 // Implement an alert that returns the user to home view after the record is uploaded successfully.
                 let successAlert = UIAlertController(title: "EZ Sign", message: "Success! Your information has been recorded.", preferredStyle: UIAlertControllerStyle.Alert)
                 successAlert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) in
@@ -108,7 +127,9 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
                 }))
                 self.presentViewController(successAlert, animated: true, completion: nil)
             } else {
-                print(error)
+                // Display an alert when some fields are not filled.
+                let errorAlert = UIAlertController(title: "EZ Sign", message: "Please check and complete all fields.", preferredStyle: UIAlertControllerStyle.Alert)
+                errorAlert.addAction(UIAlertAction(title: "Back", style: UIAlertActionStyle.Default, handler: nil))
             }
         })
     }
