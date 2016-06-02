@@ -18,6 +18,7 @@ class Record: BAAObject {
     var driver = ""
     var signOutTime = ""
     var returnTime = ""
+    var signedIn = false
     
     override init(dictionary: [NSObject: AnyObject]!) {
         self.name = dictionary["name"]! as! String
@@ -26,6 +27,7 @@ class Record: BAAObject {
         self.driver = dictionary["driver"]! as! String
         self.signOutTime = dictionary["signOutTime"]! as! String
         self.returnTime = dictionary["returnTime"]! as! String
+        self.signedIn = dictionary["signedIn"]! as! Bool
         super.init(dictionary: dictionary)
     }
     

@@ -96,6 +96,7 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         newRecord.driver = driverField.text!
         newRecord.signOutTime = formatter.stringFromDate(currentTime)
         newRecord.returnTime = formatter.stringFromDate(returnTimePicker.date)
+        newRecord.signedIn = false
         
         // Save the record to BaasBox.
         newRecord.saveObjectWithCompletion({(object: AnyObject!, error: NSError!) -> () in
