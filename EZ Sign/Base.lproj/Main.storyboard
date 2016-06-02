@@ -312,9 +312,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbl-my-XDP">
-                                <rect key="frame" x="100" y="184" width="400" height="300"/>
+                                <rect key="frame" x="175" y="184" width="250" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="Jlm-OJ-x1t"/>
+                                    <constraint firstAttribute="width" constant="250" id="Jlm-OJ-x1t"/>
                                     <constraint firstAttribute="height" constant="300" id="fQA-7y-Ewn"/>
                                 </constraints>
                             </pickerView>
@@ -333,6 +333,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeb-5H-YUt">
                                 <rect key="frame" x="269" y="514" width="62" height="30"/>
                                 <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="continueButton:" destination="i4x-2a-Uha" eventType="touchUpInside" id="hCg-ka-FOi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -347,6 +350,9 @@
                             <constraint firstItem="aeb-5H-YUt" firstAttribute="centerX" secondItem="MwA-PE-QzB" secondAttribute="centerX" id="yIR-1W-rVK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="namePicker" destination="xbl-my-XDP" id="LX2-MM-jQ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dg9-6T-cH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
