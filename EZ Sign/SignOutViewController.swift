@@ -100,14 +100,14 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         // Check if all fields are completed.
         var completedFields = true        
-        if newRecord.name == "" {
+        if nameField.text == "" {
             completedFields = false
         }
-        if newRecord.phoneNumber == "" {
+        if phoneNumberField.text == "" {
             completedFields = false
         }
         
-        if newRecord.driver == "" {
+        if driverField.text == "" {
             completedFields = false
         }
         
@@ -115,23 +115,22 @@ class SignOutViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             completedFields = false
         }
         
-        
-        
         // Save the record to BaasBox.
-        newRecord.saveObjectWithCompletion({(object: AnyObject!, error: NSError!) -> () in
-            if (error == nil) && (completedFields) {
+        if completedFields {
+            newRecord.saveObjectWithCompletion({(object: AnyObject!, error: NSError!) -> () in
                 // Implement an alert that returns the user to home view after the record is uploaded successfully.
                 let successAlert = UIAlertController(title: "EZ Sign", message: "Success! Your information has been recorded.", preferredStyle: UIAlertControllerStyle.Alert)
                 successAlert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) in
                     self.navigationController?.popViewControllerAnimated(true)
                 }))
                 self.presentViewController(successAlert, animated: true, completion: nil)
-            } else {
-                // Display an alert when some fields are not filled.
-                let errorAlert = UIAlertController(title: "EZ Sign", message: "Please check and complete all fields.", preferredStyle: UIAlertControllerStyle.Alert)
-                errorAlert.addAction(UIAlertAction(title: "Back", style: UIAlertActionStyle.Default, handler: nil))
-            }
-        })
+            })
+        } else {
+            // Display an alert when some fields are not filled.
+            let errorAlert = UIAlertController(title: "EZ Sign", message: "Please check and complete all fields.", preferredStyle: UIAlertControllerStyle.Alert)
+            errorAlert.addAction(UIAlertAction(title: "Back", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(errorAlert, animated: true, completion: nil)
+        }
     }
     
     override func viewDidLoad() {
